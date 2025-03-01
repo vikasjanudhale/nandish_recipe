@@ -1,0 +1,31 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="saved.html">Saved Recipes</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Saved Recipes</h1>
+        <div id="saved-recipes"></div>
+    </div>
+    <div id="recipe-details" class="modal">
+        <div class="modal-content" id="recipe-details-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

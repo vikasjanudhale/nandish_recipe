@@ -1,0 +1,51 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my_save.html">Saved Recipes</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Welcome to the Recipe App</h1>
+        <div class="input-container">
+            <input type="text" id="ingredient-input" placeholder="Enter an ingredient">
+            <button onclick="addIngredient()">Add Ingredient</button>
+        </div>
+        <div id="ingredients-list"></div>
+        <button onclick="findRecipes()">Find Recipes</button>
+        <div id="recipes"></div>
+    </div>
+    <div id="recipe-details" class="modal">
+        <div class="modal-content" id="recipe-details-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
